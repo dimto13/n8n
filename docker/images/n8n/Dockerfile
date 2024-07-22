@@ -6,7 +6,7 @@ RUN if [ -z "$N8N_VERSION" ] ; then echo "The N8N_VERSION argument is missing!" 
 
 LABEL org.opencontainers.image.title="n8n"
 LABEL org.opencontainers.image.description="Workflow Automation Tool"
-LABEL org.opencontainers.image.source="https://github.com/n8n-io/n8n"
+LABEL org.opencontainers.image.source="https://github.com/dimto13/n8n"
 LABEL org.opencontainers.image.url="https://n8n.io"
 LABEL org.opencontainers.image.version=${N8N_VERSION}
 

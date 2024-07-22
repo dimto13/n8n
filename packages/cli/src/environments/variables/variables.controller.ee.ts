@@ -17,7 +17,6 @@ export class VariablesController {
 	}
 
 	@Post('/')
-	@Licensed('feat:variables')
 	@GlobalScope('variable:create')
 	async createVariable(req: VariablesRequest.Create) {
 		const variable = req.body;
@@ -46,7 +45,6 @@ export class VariablesController {
 	}
 
 	@Patch('/:id')
-	@Licensed('feat:variables')
 	@GlobalScope('variable:update')
 	async updateVariable(req: VariablesRequest.Update) {
 		const id = req.params.id;

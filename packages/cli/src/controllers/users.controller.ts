@@ -267,7 +267,6 @@ export class UsersController {
 
 	@Patch('/:id/role')
 	@GlobalScope('user:changeRole')
-	@Licensed('feat:advancedPermissions')
 	async changeGlobalRole(req: UserRequest.ChangeRole) {
 		const { NO_ADMIN_ON_OWNER, NO_USER, NO_OWNER_ON_OWNER } =
 			UsersController.ERROR_MESSAGES.CHANGE_ROLE;
